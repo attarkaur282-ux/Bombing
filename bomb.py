@@ -7,13 +7,13 @@ import sys
 import base64
 import random
 
-_CHANNEL_URL = "aHR0cHM6Ly90Lm1lL051bWJlcl9TcHk="
+_BOT_NAME = "@Satvir99_HOST_BOT"
 _CHANNEL_DECODED = base64.b64decode(_CHANNEL_URL).decode()
 
 def _validate_channel():
     if not hasattr(sys, '_saurav_lock'):
         print(f"{Fore.MAGENTA}╔══════════════════════════════════════╗{Style.RESET_ALL}")
-        print(f"{Fore.CYAN}║   Sᴀᴜʀᴀᴠ X Bᴏᴍʙᴇʀ   ║{Style.RESET_ALL}")
+        print(f"{Fore.CYAN}║   satvir_hacker   ║{Style.RESET_ALL}")
         print(f"{Fore.YELLOW}║   📢 Jᴏɪɴ: {_CHANNEL_DECODED}   ║{Style.RESET_ALL}")
         print(f"{Fore.MAGENTA}╚══════════════════════════════════════╝{Style.RESET_ALL}")
         sys._saurav_lock = True
@@ -21,7 +21,7 @@ def _validate_channel():
 
 PROMO_BANNER = f"""
 {Fore.CYAN}╔══════════════════════════════════════════════════════════╗
-{Fore.CYAN}║  {Fore.RED}🔥🔥🔥 {Fore.YELLOW}Sᴀᴜʀᴀᴠ X Bᴏᴍʙᴇʀ {Fore.RED}🔥🔥🔥{Fore.CYAN}                          ║
+{Fore.CYAN}║  {Fore.RED}🔥🔥🔥 {Fore.YELLOW}satvir_hacker {Fore.RED}🔥🔥🔥{Fore.CYAN}                          ║
 {Fore.CYAN}║  {Fore.GREEN}💀 Sᴘᴇᴇᴅ: Uʟᴛʀᴀ Fᴀsᴛ  |  Mᴏᴅᴇ: Pʀᴏ 💀{Fore.CYAN}                ║
 {Fore.CYAN}║  {Fore.MAGENTA}📢 Jᴏɪɴ Oᴜʀ Cʜᴀɴɴᴇʟ: {Fore.YELLOW}{_CHANNEL_DECODED}{Fore.CYAN} 📢    ║
 {Fore.CYAN}║  {Fore.RED}⚠️ Dᴏ Nᴏᴛ Rᴇᴍᴏᴠᴇ Cʀᴇᴅɪᴛ - Cᴏᴅᴇ Wɪʟʟ Fᴀɪʟ ⚠️{Fore.CYAN}     ║
@@ -39,9 +39,9 @@ def promo_decorator(func):
 
 def _random_promo():
     promos = [
-        f"{Fore.MAGENTA}⚡ Sᴀᴜʀᴀᴠ X Bᴏᴍʙᴇʀ ⚡ | Jᴏɪɴ: {_CHANNEL_DECODED}{Style.RESET_ALL}",
-        f"{Fore.CYAN}🔥 Sᴀᴜʀᴀᴠ Pʀᴇsᴇɴᴛs 🔥 | Tᴇʟᴇɢʀᴀᴍ: {_CHANNEL_DECODED}{Style.RESET_ALL}",
-        f"{Fore.YELLOW}💀 Pᴏᴡᴇʀᴇᴅ Bʏ Sᴀᴜʀᴀᴠ 💀 | {_CHANNEL_DECODED}{Style.RESET_ALL}",
+        f"{Fore.MAGENTA}⚡ satvir_hacker ⚡ | Jᴏɪɴ: {_CHANNEL_DECODED}{Style.RESET_ALL}",
+        f"{Fore.CYAN}🔥 @notxsatvir 🔥 | Tᴇʟᴇɢʀᴀᴍ: {_CHANNEL_DECODED}{Style.RESET_ALL}",
+        f"{Fore.YELLOW}💀 Pᴏᴡᴇʀᴇᴅ Bʏ satvir 💀 | {_CHANNEL_DECODED}{Style.RESET_ALL}",
         f"{Fore.GREEN}📢 Cʜᴀɴɴᴇʟ: {_CHANNEL_DECODED} 📢{Style.RESET_ALL}"
     ]
     if random.random() < 0.3:
